@@ -70,6 +70,7 @@ h1, h2, h3, h4 { line-height: 1.2; margin: 0; letter-spacing: -0.015em; }
 
 .sub { font-size: 1.1rem; margin: 40px 0 14px; }
 .demos { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; }
+.demos.three { grid-template-columns: repeat(3, 1fr); margin-top: 12px; }
 .demo { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; color: var(--text); display: flex; flex-direction: column; }
 .demo:hover { text-decoration: none; border-color: var(--accent); }
 .demo img { border-bottom: 1px solid var(--line); }
@@ -104,7 +105,7 @@ h1, h2, h3, h4 { line-height: 1.2; margin: 0; letter-spacing: -0.015em; }
   .hero-photo { order: -1; justify-self: start; }
   .hero-photo img { width: 140px; border-radius: 18px; }
   .numbers { grid-template-columns: repeat(2, 1fr); }
-  .cards, .demos { grid-template-columns: 1fr; }
+  .cards, .demos, .demos.three { grid-template-columns: 1fr; }
   .services, .skills { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 560px) {
